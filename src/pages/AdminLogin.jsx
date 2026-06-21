@@ -26,7 +26,7 @@ function AdminLogin() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/admin/login",
+        "https://undercut-salon-backend.onrender.com/api/admin/login",
         formData
       );
 

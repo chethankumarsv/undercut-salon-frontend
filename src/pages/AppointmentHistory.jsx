@@ -9,7 +9,7 @@ function AppointmentHistory() {
   const searchBookings = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/bookings/customer/${email}`
+        `https://undercut-salon-backend.onrender.com/api/bookings/customer/${email}`
       );
 
       setBookings(res.data.bookings);

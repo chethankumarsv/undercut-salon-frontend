@@ -23,7 +23,7 @@ function AdminDashboard() {
   const fetchBookings = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/bookings",
+        "https://undercut-salon-backend.onrender.com/api/bookings",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -62,7 +62,7 @@ function AdminDashboard() {
   const updateStatus = async (id, status) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/bookings/${id}`,
+        `https://undercut-salon-backend.onrender.com/api/bookings/${id}`,
         { status },
         {
           headers: {
@@ -86,7 +86,7 @@ function AdminDashboard() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/bookings/${id}`,
+        `https://undercut-salon-backend.onrender.com/api/bookings/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

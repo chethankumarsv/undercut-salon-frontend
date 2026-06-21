@@ -36,7 +36,7 @@ const [bookingData, setBookingData] = useState(null);
       setLoading(true);
 
      const response = await axios.post(
-  "http://localhost:5000/api/bookings",
+  "https://undercut-salon-backend.onrender.com/api/bookings",
   formData
 );
 
